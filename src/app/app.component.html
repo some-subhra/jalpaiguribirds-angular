@@ -1,71 +1,6 @@
 <div class="top-most custom-shadow" style="margin:0; padding:0;">
-  <!-- 
-  <div class="col-md-8 col-sm-12">
-    <div id="navigator">
-      <nav class="navbar navbar-default" role="navigation" style="background-color:transparent;border-color:none;margin-bottom:0px;">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav lobster">
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Index.html">Home</a>
-            </li>
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
-            </li>
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Gallery.html">Gallery</a>
-            </li>
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Trip-Reports.html">Trip-Reports</a>
-            </li>
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Hot-Spot.html">Birding Spots</a>
-            </li>
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Generalinfo.html">General-Info</a>
-            </li>
-            <li class="highlight3a underlined centuro m-left vanish">
-              <a href="../Team.html">Team</a>
-            </li>
-            <li class="highlight3a m-glass centuro m-left">
-              <form autocomplete="off" action="http://www.google.com/cse" id="cse-search-box" target="_blank" role="search">
-                <input type="hidden" name="cx" value="011962969795728809989:p8xun0sqwp0">
-                <input type="hidden" name="ie" value="UTF-8">
-                <input type="text" name="q" class="search-field" placeholder="SEARCH    JALPAIGURI BIRDS">
-                <input name="siteurl" type="hidden" value="www.jalpaiguribirds.com">
-                <input name="ref" type="hidden" value="">
-                <input name="ss" type="hidden" value="">
-                <input type="submit" name="sa" class="search-submit" value="Search">
-              </form>
-            </li>
-            <li class="cross centuro">
-              <img class="close-image" style="height:36px ; width:36px;" src="../assets/images/Other-Images/multiply-.png">
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <style>
-        .navbar .navbar-nav {
-          display: inline-block;
-          float: none;
-        }
-
-        .navbar .navbar-collapse {
-          text-align: center;
-        }
-      </style>
-    </div>
-  </div> -->
   <nav class="navbar navbar-expand-lg navbar-light green-bg">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" routerLink="/index">
       <div class="header-name lobster">
         <span class="hide-on-collapse">Jalpaiguri</span>
         <img id="logo" class="rounded-circle" src="../assets/images/Other-Images/logo/new logo.jpg">
@@ -80,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
         <li class="nav-item highlight3a lobster">
-          <a class="nav-link" href="../Index.html">Home</a>
+          <a class="nav-link" routerLink="/index">Home</a>
         </li>
         <li class="nav-item highlight3a lobster">
           <a class="nav-link" href="../Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
@@ -116,19 +51,17 @@
   </nav>
 </div>
 
-
-<router-outlet> jalpaiguri birds in angular 6 </router-outlet>
-<!-- Routed views go here -->
-
+<div id="content" class="container">
+    <router-outlet> </router-outlet>
+</div>
 
 <div id="footer" class="row custom-shadow-rev">
-
   <div id="site-map" class="col-md-3 col-sm-6 col-xs-12 footer-blocks">
     <p class="header-texts-small lobster">Site-Map</p>
     <div id="site-menu">
       <ul>
         <li class="highlight2">
-          <a href="../Index.html">Home</a>
+          <a routerLink="/index">Home</a>
         </li>
         <li class="highlight2">
           <a href="../Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
@@ -156,12 +89,12 @@
     <p class="header-texts-small lobster">Highlights</p>
     <div id="news-list">
       <ul>
-        <li class="highlight2">
+        <li class="highlight3">
           <a style="color:#000" href="#">
             <mark>Latest news about sighting</mark>
           </a>
         </li>
-        <li class="highlight2">
+        <li class="highlight3">
           <a style="color:#000" href="#">
             <mark>Meeting / meet / workshop </mark>
           </a>

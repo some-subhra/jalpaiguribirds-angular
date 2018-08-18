@@ -1,0 +1,96 @@
+.carousel {
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 100px;
+        height: 30px;
+    }
+    .carousel-indicators {
+        bottom: -25px;
+
+        li {
+            background-color: rgba(55, 81, 31, 0.4);
+        }
+
+        li.active {
+            background-color: rgb(55, 81, 31);
+        }
+    }
+
+    .carousel-item {
+        .carousel-items {
+            display: inline-block;
+            position: relative;
+
+            .carousel-captions, .carousel-user, .carousel-location {
+                font-family: 'Roboto Condensed', sans-serif;
+                position: absolute;
+                font-weight: 400;
+                margin: 6px;
+                line-height: 22px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-transform: capitalize;
+                max-width: 45%;
+                white-space: nowrap;
+                display: none;
+            }
+
+            .carousel-captions {
+                display: inline-block;
+                font-size: 16px;
+                color: #050519;
+                background-color: rgba(255, 255, 255, 0.85);
+                cursor: default;
+                text-align: left;
+                bottom: 15px;
+                left: 20px;
+                border-radius: 2px;
+                padding: 3px 8px;
+                width: 100%;
+                max-width: 86%;
+                text-align: center;
+            }
+
+            .carousel-user {
+                font-size: 12px;
+                color: #050519;
+                background-color: #ffffff80;
+                cursor: default;
+                padding-right: 2px;
+                text-align: right;
+                bottom: 15px;
+                right: 15px;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                padding-left: 6px;
+            }
+
+            .carousel-location {
+                font-size: 12px;
+                top: 15px;
+                right: 15px;
+                font-weight: normal;
+                margin: 6px;
+                color: #f7f7fd;
+                background-color: rgba(55, 81, 31, 0.55);
+                cursor: default;
+                text-align: right;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                padding-left: 6px;
+                padding-right: 2px;
+                border: 1px solid #ccc;
+                border-right: none;
+            }
+        }
+
+        img {
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            display: inline-block !important;
+            margin: 10px auto;
+            width: 100%;
+            height: 235px;
+        }
+    }
+}

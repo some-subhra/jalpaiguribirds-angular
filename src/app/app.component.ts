@@ -8,7 +8,7 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Home | Jalpaiguri Birds';
+  title = 'Jalpaiguri Birds';
   constructor() {
 
   }
@@ -78,15 +78,15 @@ export class AppComponent {
       }
     });
 
-    if ($(window).width() < 400) {
-      $('#logo').before('<br>');
-    }
+    // if ($(window).width() < 400) {
+    //   $('#logo').before('<br>');
+    // }
 
 
-    if ($(window).width() <= 768) {
-      var tripSelectMain = $('.trip-select-main');
-      $('.trip-user-main').after(tripSelectMain);
-    }
+    // if ($(window).width() <= 768) {
+    //   var tripSelectMain = $('.trip-select-main');
+    //   $('.trip-user-main').after(tripSelectMain);
+    // }
 
     // $('.pad').on('click', (event) => {
     //   event.preventDefault();
