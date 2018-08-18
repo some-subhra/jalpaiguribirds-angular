@@ -7,7 +7,13 @@
     padding: 0;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
 .body-wrapper {
+    font-size: 14px !important;
     background-color: #F7F7FD;
     font-family: 'Roboto Condensed',Arial, Helvetica,sans-serif;
 }
@@ -235,20 +241,19 @@
     border-radius: 2px;
 }
 
-#welcome {
-    color: #000;
-}
-
 #welcome-sighting, #tour-map, #trip-spot {
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 #sighting, #tour, #map, #trip-report, #bird-spot {
-    /* margin-top: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #welcome {
-    /* margin-top: 40px; */
+    margin-top: 40px;
+    text-align: justify;
+    color: #000;
 }
 
 .google-maps {
@@ -267,7 +272,7 @@
 
 .trip-box {
     border: 1px solid #ccc;
-    --moz-box-shadow:0 3px 6px #999;
+    -moz-box-shadow:0 3px 6px #999;
     -webkit-box-shadow: 0 3px 6px #999;
     box-shadow: 0 3px 6px #999;
     background-color: #fff;
@@ -627,7 +632,7 @@ input[type=search] {
 
     .by {
         height: 79px;
-        diaply: none;
+        display: none;
     }
 }
 
@@ -768,3 +773,20 @@ ul#marker_list li.loc.active, ul#marker_list li.reset {
 .vu {
     background-color: #cc9900;
 }
+
+/* @media (min-width: 768px) {
+    .container {
+      width: 650px;
+    }
+   
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 865px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1080px;
+    }
+  } */
