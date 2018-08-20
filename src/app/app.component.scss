@@ -1,0 +1,38 @@
+.container {
+    margin: 30px auto;
+}
+
+.search-nav {
+    .search-box, .btn {
+        padding: 2px 5px;
+        height: 30px;
+        font-family: 'Raleway', sans-serif !important;
+        text-transform: capitalize;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .search-box {
+        height: 25px;
+        min-width: 170px;
+        max-width: 100%;
+        margin-left: 10px;
+        border-radius: 2px;
+    }
+
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #ccc;
+    }
+
+    input::-moz-placeholder { /* Firefox 19+ */
+        color: #ccc;
+    }
+
+    input::-ms-input-placeholder { /* IE 10+ */
+        color: #ccc;
+    }
+
+    input::-moz-placeholder { /* Firefox 18- */
+        color: #ccc;
+    }
+}
