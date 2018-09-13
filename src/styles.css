@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:600);
 
@@ -52,11 +52,11 @@ p {
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
     background-color: #334A1D;
     border-radius: 6px;
-    color: #fff;
+    color: #fff !important;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #fff;
+    color: #fff !important;
     padding: 10px 13px;
 }
 

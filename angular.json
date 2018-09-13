@@ -24,7 +24,12 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets/images/Other-Images/Birding Tour-Images",
+              "src/assets/images/Other-Images/Home-Page Slider Images",
+              "src/assets/images/Other-Images/Hot - Spots-Images",
+              "src/assets/images/Other-Images/Trip-Reports-Images",
+              "src/assets/images/Other-Images/logo",
+              "src/assets/images/Other-Images/Rarity Read"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
