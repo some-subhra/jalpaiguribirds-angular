@@ -3,6 +3,7 @@
         width: 100px;
         height: 30px;
     }
+
     .carousel-indicators {
         bottom: -35px;
 
@@ -43,12 +44,13 @@
                 background-color: rgba(255, 255, 255, 0.9);
                 cursor: default;
                 bottom: 15px;
-                left: 20px;
+                left: 50%;
                 border-radius: 2px;
                 padding: 4px 8px;
                 width: 100%;
                 max-width: 86%;
                 text-align: center;
+                margin-left: -43%;
             }
 
             .carousel-user {
@@ -83,10 +85,7 @@
                 border-right: none;
             }
         }
-
-       
     }
-    
 }
 
 .carousel-item {
@@ -107,6 +106,7 @@
     .carousel-item {
         .carousel-items {
             width: 100%;
+
             .image-caption-wrapper {
                 position: relative;
             }
@@ -132,6 +132,28 @@
         }
     }
 }
+
+
+.smallScreen {
+    display: none;
+}
+
+.bigScreen {
+    display: block;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .bigScreen {
+        display: none;
+    }
+
+    .smallScreen {
+        display: block;
+    }
+}
+
+
 
 // .trip-box::before {
 //     position: absolute;
