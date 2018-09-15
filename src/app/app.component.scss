@@ -36,3 +36,43 @@
         color: #ccc;
     }
 }
+#articleSlider.carousel {
+    width: 200px;
+    margin: auto;
+    .carousel-indicators {
+        bottom: -35px;
+        li {
+            background-color: rgba(55, 81, 31, 0.4);
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+        }
+    
+        li.active {
+            background-color: rgb(55, 81, 31);
+        }
+    }
+    .carousel-image-caption {
+        position: relative;
+    }
+
+    .carousel-caption {
+        background-color: #00000045;
+        height: 255px;
+        width: 188px;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        padding: 40px 10px 10px;
+        margin: 0px;
+        h5 {
+            font-family: 'Raleway', sans-serif !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #articleSlider.carousel {
+        float: left;
+    }
+}

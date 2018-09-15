@@ -125,8 +125,8 @@
                     <div class="carousel-items col-md-12">
                         <div class="image-caption-wrapper">
                             <img class="d-block custom-shadow" src={{items.src}} alt="carousel slide">
-                            <div class="carousel-captions">Birding at
-                                <b>{{items.location}}</b>
+                            <div class="carousel-captions">
+                                <span class="birding-location">{{items.location}}</span>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                     <p class="read">
                         <a target="_blank" href="{{items.link}}">
                             <span class="read-button uper">{{items.type == 'Birding Spot' ? 'Check' : 'Read'}}&nbsp;{{items.type}}&nbsp;
-                                <span class="glyphicon glyphicon glyphicon-share-alt"></span>
+                                <span class="oi oi-share"></span>
                             </span>
                         </a>
                     </p>

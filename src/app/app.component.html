@@ -7,8 +7,8 @@
         <span class="hide-on-collapse">Birds</span>
       </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -113,10 +113,26 @@
 
   <div id="literature" class="col-md-4 col-sm-6 col-xs-12 footer-blocks centuro ">
     <p class="header-texts-small lobster ">Literatures & Publications</p>
-    <a target="_blank" href="#">
-      <p class="publication header-texts-small" style="color:#000;"> The Amur Falcon Story</p>
-      <img class="img-thumbnail custom-shadow" src="../assets/images/Other-Images/ba20cover.jpg">
-    </a>
+    <div id="articleSlider" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li *ngFor="let slider of articleSlider; let myIndex = index" data-target="#articleSlider" [attr.data-slide-to]="myIndex"
+          [ngClass]="{'active': myIndex == 0 }"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let items of articleSlider; let myIndex = index" [ngClass]="{'active': myIndex == 0 }">
+          <a target="_blank" href="{{items.link}}">
+            <p style="color:#000;text-decoration:none; underline: none;" class="day highlight2">Read Article <span class="oi oi-document"></span></p>
+            <div class="carousel-image-caption">
+              <img class="img-thumbnail custom-shadow" style="margin-bottom:5px;" src={{items.src}}>
+              <div class="carousel-caption">
+                <h5>{{items.caption}}</h5>
+                <p>{{items.users}}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="contact" class="col-md-3 col-sm-6 col-xs-12 footer-blocks">
@@ -127,8 +143,8 @@
       <span class="highlight3"> +91 9474590987</span>
       <br>
       <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;
-      <a style="color:#000" class="highlight3" data-toggle="" data-placement="auto top" title="we are just one click away !!" target="_blank"
-        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=duttamousumi@gmail.com&cc=bishwapriya@gmail.com&su=RE:JALPAIGURI BIRDS:<-- please write your concern -->&body=Hi Mousumi , %0A%0A%0A%0A%0A%0AThanks,%0A%0AYour Name - %0AContact - ">
+      <a style="color:#000" class="highlight3" data-toggle="" data-placement="auto top" title="we are just one click away !!"
+        target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=duttamousumi@gmail.com&cc=bishwapriya@gmail.com&su=RE:JALPAIGURI BIRDS:<-- please write your concern -->&body=Hi Mousumi , %0A%0A%0A%0A%0A%0AThanks,%0A%0AYour Name - %0AContact - ">
         duttamousumi@gmail.com</a>
       <br>
     </div>
@@ -139,8 +155,8 @@
       <span class="highlight3"> +91 9434010497</span>
       <br>
       <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;
-      <a style="color:#000" class="highlight3" data-toggle="" data-placement="auto top" title="we are just one click away !!" target="_blank"
-        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bishwapriya@gmail.com&cc=duttamousumi@gmail.com&su=RE:JALPAIGURI BIRDS:<-- please write your concern -->&body=Hi Biswapriya , %0A%0A%0A%0A%0A%0AThanks,%0A%0AYour Name - %0AContact - ">bishwapriya@gmail.com</a>
+      <a style="color:#000" class="highlight3" data-toggle="" data-placement="auto top" title="we are just one click away !!"
+        target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bishwapriya@gmail.com&cc=duttamousumi@gmail.com&su=RE:JALPAIGURI BIRDS:<-- please write your concern -->&body=Hi Biswapriya , %0A%0A%0A%0A%0A%0AThanks,%0A%0AYour Name - %0AContact - ">bishwapriya@gmail.com</a>
       <br>
     </div>
     <br>
@@ -155,7 +171,8 @@
   <div class="col-md-12 col-sm-12 col-xs-12">
     <p class="highlight4 centuro"> &copy;
       <span style="color:#fdfdfd;"> Mousumi Dutta </span> and
-      <span style="color:#fdfdfd;">Biswapriya Rahut</span> 2003-2015 &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; Created by
+      <span style="color:#fdfdfd;">Biswapriya Rahut</span> 2003-2015 &nbsp; | &nbsp; All rights reserved &nbsp; |
+      &nbsp; Created by
       <a style="color:#fdfdfd;" href="#"> Mousumi Dutta </a> and designed by
       <a style="color:#fdfdfd;" href="https://www.facebook.com/somesubhra.patra?ref=tn_tnmn">Some Subhra Patra</a>.</p>
   </div>
