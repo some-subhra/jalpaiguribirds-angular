@@ -12,6 +12,10 @@ p {
     margin-bottom: .5rem;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 .body-wrapper {
     font-size: 14px !important;
     background-color: #F7F7FD;

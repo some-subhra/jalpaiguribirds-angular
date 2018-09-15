@@ -104,7 +104,7 @@
     <br>
     <br>
     <p class="header-texts-small lobster">Rarity Read</p>
-    <a target="_blank" href="Rarity Read.html">
+    <a target="_blank" style="underline:none;" href="Rarity Read.html">
       <p style="color:#000;text-decoration:none;" class="day highlight2">Hooded Pitta [
         <span class="highlight3" style="text-decoration:underline;">Pitta sordida</span> ]</p>
       <img id="" class="centuro rounded-circle  custom-shadow" style="border:3px solid #fff;" src="../assets/images/Other-Images/Rarity Read/Pitta_net-transparent.png">
@@ -120,8 +120,8 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let items of articleSlider; let myIndex = index" [ngClass]="{'active': myIndex == 0 }">
-          <a target="_blank" href="{{items.link}}">
-            <p style="color:#000;text-decoration:none; underline: none;" class="day highlight2">Read Article <span class="oi oi-document"></span></p>
+          <a target="_blank" style="underline:none;" href="{{items.link}}">
+            <p style="color:#000;text-decoration:none; text-align: center;" class="day highlight2">Read Article <span class="oi oi-document"></span></p>
             <div class="carousel-image-caption">
               <img class="img-thumbnail custom-shadow" style="margin-bottom:5px;" src={{items.src}}>
               <div class="carousel-caption">

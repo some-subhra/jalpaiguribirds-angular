@@ -40,16 +40,16 @@
     width: 200px;
     margin: auto;
     .carousel-indicators {
-        bottom: -35px;
+        // bottom: -35px;
         li {
-            background-color: rgba(55, 81, 31, 0.4);
+            // background-color: rgba(55, 81, 31, 0.4);
             height: 7px;
             width: 7px;
             border-radius: 50%;
         }
     
         li.active {
-            background-color: rgb(55, 81, 31);
+            // background-color: rgb(55, 81, 31);
         }
     }
     .carousel-image-caption {
