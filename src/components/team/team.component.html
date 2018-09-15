@@ -1,3 +1,32 @@
-<p>
-  team works!
-</p>
+<p class="header-texts lobster centuro  margin-top"> A Li'l Bit Of Info About Us </p>
+<div id="team" class="container">
+
+  <div id="moderators">
+    <p class="header-texts-small lobster"> Moderators </p>
+    <div class="space-left">
+      <div class="row team-card" *ngFor="let items of moderators">
+        <div id="team-img" class="col-md-2"><img class="img-thumbnail" src={{items.src}}></div>
+        <div id="team-description" class="col-md-10">
+          <p class="highlight1"><a style="color:#333333" target="_blank" href="{{items.fblink}}">{{items.name}} &nbsp;<img
+                src='../../assets/images/Other-Images/logo/fb.png'></a></p>
+          <p [innerHTML]="items.intro"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="members">
+    <p class="header-texts-small lobster"> Contributors </p>
+    <div class="space-left">
+      <div class="row team-card" *ngFor="let items of contributors">
+        <div id="team-img" class="col-md-2"><img class="img-thumbnail" src={{items.src}}></div>
+        <div id="team-description" class="col-md-10">
+          <p class="highlight1"><a style="color:#333333" target="_blank" href="{{items.fblink}}">{{items.name}} &nbsp;<img
+                src='../../assets/images/Other-Images/logo/fb.png'></a></p>
+          <p [innerHTML]="items.intro"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

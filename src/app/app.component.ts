@@ -19,7 +19,7 @@ export class AppComponent {
       {
         'caption': 'Nesting of Green Cochoa in Buxa Tiger Reserve',
         'users': 'Biswapriya Rahut',
-        'link': '../assets/article-docs/Nesting Green Cochoa.pdf',
+        'link': '../assets/article-docs/Nesting_Green_Cochoa.pdf',
         'src': '../assets/images/Other-Images/article-slider/cochoa.png'
       }, {
         'caption': 'First record of Rufous-throated Wren-babbler from Buxa Tiger Reserve',

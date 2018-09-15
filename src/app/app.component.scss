@@ -8,16 +8,17 @@
         height: 30px;
         font-family: 'Raleway', sans-serif !important;
         text-transform: capitalize;
-        font-size: 10px;
+        font-size: 12px;
         text-align: left;
     }
 
     .search-box {
-        height: 25px;
-        min-width: 170px;
+        height: 35px;
+        min-width: 200px;
         max-width: 100%;
         margin-left: 10px;
         border-radius: 2px;
+        font-weight: normal;
     }
 
     input::-webkit-input-placeholder { /* Chrome/Opera/Safari */

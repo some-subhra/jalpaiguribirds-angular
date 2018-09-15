@@ -18,19 +18,16 @@
           <a class="nav-link" routerLink="/index">Home</a>
         </li>
         <li class="nav-item highlight3a lobster">
-          <a class="nav-link" href="../Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
+          <a class="nav-link" routerLink="../Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
         </li>
         <li class="nav-item highlight3a lobster">
-          <a class="nav-link" href="../Gallery.html">Gallery</a>
+          <a class="nav-link" routerLink="../Gallery.html">Gallery</a>
         </li>
         <li class="nav-item highlight3a lobster">
-          <a class="nav-link" href="../Trip-Reports.html">Trip-Reports</a>
+          <a class="nav-link" routerLink="../Trip-Reports.html">Trip-Reports</a>
         </li>
         <li class="nav-item highlight3a lobster">
-          <a class="nav-link" href="../Hot-Spot.html">Birding Spots</a>
-        </li>
-        <li class="nav-item highlight3a lobster">
-          <a class="nav-link" href="../Generalinfo.html">General-Info</a>
+          <a class="nav-link" routerLink="../Hot-Spot.html">Birding Spots</a>
         </li>
         <li class="nav-item highlight3a lobster">
           <a class="nav-link" routerLink="/team">Team</a>
@@ -64,19 +61,16 @@
           <a routerLink="/index">Home</a>
         </li>
         <li class="highlight2">
-          <a href="../Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
+          <a routerLink="Checklist - Jalpaiguri & Teesta Riverbed.html">Checklist</a>
         </li>
         <li class="highlight2">
-          <a href="../Gallery.html">Gallery</a>
+          <a routerLink="Gallery.html">Gallery</a>
         </li>
         <li class="highlight2">
-          <a href="../Trip-Reports.html">Trip-Reports</a>
+          <a routerLink="Trip-Reports.html">Trip-Reports</a>
         </li>
         <li class="highlight2">
-          <a href="../Hot-Spot.html">Birding Spots</a>
-        </li>
-        <li class="highlight2">
-          <a href="../Generalinfo.html">General-Info</a>
+          <a routerLink="Hot-Spot.html">Birding Spots</a>
         </li>
         <li class="highlight2">
           <a routerLink="/team">Team</a>
@@ -121,7 +115,7 @@
       <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let items of articleSlider; let myIndex = index" [ngClass]="{'active': myIndex == 0 }">
           <a target="_blank" style="underline:none;" href="{{items.link}}">
-            <p style="color:#000;text-decoration:none; text-align: center;" class="day highlight2">Read Article <span class="oi oi-document"></span></p>
+            <p style="color:#000;text-decoration:none; text-align: center;" class="day highlight2">Read Article &nbsp;&nbsp;<span class="oi oi-document"></span></p>
             <div class="carousel-image-caption">
               <img class="img-thumbnail custom-shadow" style="margin-bottom:5px;" src={{items.src}}>
               <div class="carousel-caption">
