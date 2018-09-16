@@ -2,6 +2,9 @@
     margin: 30px auto;
 }
 
+.hide-on-collapse {
+    display: inline-block;
+}
 .search-nav {
     .search-box, .btn {
         padding: 2px 5px;
@@ -77,8 +80,13 @@
     margin-top: 5px;
 }
 
+
+
 @media (max-width: 576px) {
     #articleSlider.carousel {
         float: left;
+    }
+    .hide-on-collapse {
+        display: none;
     }
 }
