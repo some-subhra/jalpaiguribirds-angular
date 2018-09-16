@@ -371,7 +371,7 @@ a:hover {
 
 #site-menu a {
     background-color: #201C1D;
-    color: #fff;
+    color: #fff !important;
     display: block;
     text-decoration: none;
     font-weight: 400;
