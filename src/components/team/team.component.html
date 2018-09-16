@@ -1,8 +1,8 @@
 <p class="header-texts lobster centuro  margin-top"> A Li'l Bit Of Info About Us </p>
 <div id="team" class="container">
 
-  <div class="teams" *ngFor="let team of teamMembers; let myIndex = index">
-    <p class="header-texts-small lobster">{{myIndex == 0 ? 'Moderators' : 'Contributors'}} </p>
+  <div class="teams" *ngFor="let team of teamMembers">
+    <p class="header-texts-small lobster">{{team.type}} </p>
     <div class="space-left">
       <div class="row team-card" *ngFor="let items of team.members">
         <div id="team-img" class="col-md-2"><img class="img-thumbnail" src={{items.src}}></div>

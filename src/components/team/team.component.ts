@@ -13,6 +13,7 @@ export class TeamComponent implements OnInit {
 
     this.teamMembers = [
       {
+        type: 'Moderators',
         members: [
           {
             name: 'Biswapriya Rahut',
@@ -44,6 +45,7 @@ export class TeamComponent implements OnInit {
         ]
       },
       {
+        type: 'Contributors',
         members: [
           {
             name: 'Amit Thakurta',
