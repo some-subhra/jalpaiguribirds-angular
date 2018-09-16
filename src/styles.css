@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
 }
-
+body {overflow-x: hidden;}
 p {
     margin-top: 0;
     margin-bottom: .5rem;
@@ -14,12 +14,12 @@ p {
 
 a {
     text-decoration: none !important;
-    color:initial;
+    color:#333333 !important;
 }
 
 a:hover {
     text-decoration: none !important;
-    color:initial;
+    color:#333333 !important;
 }
 
 .body-wrapper {
@@ -477,10 +477,7 @@ to {
     margin: 20px;
 }
 
-#team-description {
-    margin-top: 5px;
-    color: #000;
-}
+
 
 .glyphicon-triangle-bottom {
     float: right;
@@ -632,9 +629,7 @@ input[type=search] {
         margin-bottom: 5px;
     }
 
-    #team-description {
-        margin-bottom: 20px;
-    }
+    
 
     #images > div {
         margin-bottom: 25px;

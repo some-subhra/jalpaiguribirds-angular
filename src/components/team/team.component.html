@@ -6,7 +6,7 @@
     <div class="space-left">
       <div class="row team-card" *ngFor="let items of team.members">
         <div id="team-img" class="col-md-2"><img class="img-thumbnail" src={{items.src}}></div>
-        <div id="team-description" class="col-md-10">
+        <div class="col-md-10 team-description">
           <p class="highlight1"><a style="color:#333333" target="_blank" href="{{items.fblink}}">{{items.name}} &nbsp;<img
                 src='../../assets/images/Other-Images/logo/fb.png'></a></p>
           <p [innerHTML]="items.intro"></p>

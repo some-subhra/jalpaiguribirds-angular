@@ -54,7 +54,7 @@ export class TeamComponent implements OnInit {
             intro: `A school teacher by profession, he has been actively observing and photographing birds for the last
                 <span class="highlight2">15 years</span>. He has been instrumental in recording the occurrence of many
                 new species in and around Jalpaiguri town.
-                He is also a <span class="highlight2">major contributor</span> to the database of jalpaiguribirds.com.
+                He is also a <span class="highlight2">major contributor</span> to the database of jalpaiguribirds.org.
                 Many of his photographs and articles have been published in major Bird books and magazines. He also
                 takes keen interest in <span class="highlight2">painting</span>.`
           }, {
@@ -72,7 +72,7 @@ export class TeamComponent implements OnInit {
             intro: `A lecturer of Mechanical Engineering, Sri Ghatak is a keen birdwatcher and bird photographer.
                   He is currently in-charge of the Falakata Polytechnic College.
                   He has made some very significant records around the <span class="highlight2">Jalpaiguri landscape</span>
-                  and has quite a few major contribution for jalpaiguribirds.com.`
+                  and has quite a few major contribution for jalpaiguribirds.org.`
           }, {
             name: 'Debapratim Saha',
             src: '../assets/images/Other-Images/Team-Images/debapratim.jpg',
