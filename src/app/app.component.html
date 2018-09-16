@@ -24,7 +24,7 @@
           <a class="nav-link" routerLink="../Gallery.html">Gallery</a>
         </li>
         <li class="nav-item highlight3a lobster">
-          <a class="nav-link" routerLink="../Trip-Reports.html">Trip-Reports</a>
+          <a class="nav-link" routerLink="/trip-reports">Trip-Reports</a>
         </li>
         <li class="nav-item highlight3a lobster">
           <a class="nav-link" routerLink="../Hot-Spot.html">Birding Spots</a>
@@ -67,7 +67,7 @@
           <a routerLink="Gallery.html">Gallery</a>
         </li>
         <li class="highlight2">
-          <a routerLink="Trip-Reports.html">Trip-Reports</a>
+          <a routerLink="/trip-reports">Trip-Reports</a>
         </li>
         <li class="highlight2">
           <a routerLink="Hot-Spot.html">Birding Spots</a>
@@ -115,7 +115,8 @@
       <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let items of articleSlider; let myIndex = index" [ngClass]="{'active': myIndex == 0 }">
           <a target="_blank" style="underline:none;" href="{{items.link}}">
-            <p style="color:#000;text-decoration:none; text-align: center;" class="day highlight2">Read Article &nbsp;&nbsp;<span class="oi oi-document"></span></p>
+            <p style="color:#000;text-decoration:none; text-align: center;" class="day highlight2">Read Article
+              &nbsp;&nbsp;<span class="oi oi-document"></span></p>
             <div class="carousel-image-caption">
               <img class="img-thumbnail custom-shadow" style="margin-bottom:5px;" src={{items.src}}>
               <div class="carousel-caption">
@@ -133,30 +134,19 @@
     <p class="header-texts-small lobster">We Like To hear from you</p>
     <div id="di">
       <p class="header-texts-small"> Mousumi Dutta</p>
-      <span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;
-      <span class="highlight3"> +91 9474590987</span>
-      <br>
-      <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;
-      <a style="color:#000" class="highlight3" data-toggle="" data-placement="auto top" title="we are just one click away !!"
-        target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=duttamousumi@gmail.com&cc=bishwapriya@gmail.com&su=RE:JALPAIGURI BIRDS:<-- please write your concern -->&body=Hi Mousumi , %0A%0A%0A%0A%0A%0AThanks,%0A%0AYour Name - %0AContact - ">
-        duttamousumi@gmail.com</a>
-      <br>
+      <span class="oi oi-phone"></span>&nbsp;&nbsp;<span class="highlight3"> +91-9474590987</span><br>
+      <span class="oi oi-envelope-closed"></span>&nbsp;<span class="highlight3"> jalpaiguribird@gmail.com</span>
     </div>
     <br>
     <div id="da">
       <p class="header-texts-small">Biswapriya Rahut</p>
-      <span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;
-      <span class="highlight3"> +91 9434010497</span>
-      <br>
-      <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;
-      <a style="color:#000" class="highlight3" data-toggle="" data-placement="auto top" title="we are just one click away !!"
-        target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bishwapriya@gmail.com&cc=duttamousumi@gmail.com&su=RE:JALPAIGURI BIRDS:<-- please write your concern -->&body=Hi Biswapriya , %0A%0A%0A%0A%0A%0AThanks,%0A%0AYour Name - %0AContact - ">bishwapriya@gmail.com</a>
-      <br>
+      <span class="oi oi-phone"></span>&nbsp;&nbsp;<span class="highlight3"> +91-9434010497</span><br>
+      <span class="oi oi-envelope-closed"></span>&nbsp;<span class="highlight3"> jalpaiguribird@gmail.com</span>
     </div>
     <br>
-    <br>
     <p class="header-texts-small lobster">Sharing is Caring</p>
-    <div class="fb-share-button" data-href="http://www.jalpaiguribirds.com/" data-layout="link"></div>
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like"
+      data-size="small" data-show-faces="true" data-share="true"></div>
   </div>
 
 </div>

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { HomeComponent } from '../components/home/home.component';
 import { TeamComponent } from '../components/team/team.component';
+import { TripReportComponent } from '../components/trip-report/trip-report.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { TeamComponent } from '../components/team/team.component';
     AppComponent,
     HomeComponent,
     TeamComponent,
+    TripReportComponent,
   ],
   imports: [
     BrowserModule,
