@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '../../node_modules/@angular/router';
+import { Routes, RouterModule, Router, NavigationEnd } from '../../node_modules/@angular/router';
 import { HomeComponent } from '../components/home/home.component';
 import { TeamComponent } from '../components/team/team.component';
 import { TripReportComponent } from '../components/trip-report/trip-report.component';
+import * as $ from 'jquery';
+
 
 
 const routes: Routes = [
@@ -19,5 +21,14 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule {
-
+    constructor(private router: Router) {
+        router.events.forEach((event) => {
+            if (event instanceof NavigationEnd) {
+                var isExpanded = $('.navbar-toggler').attr('aria-expanded') === 'true';
+                if (isExpanded) {
+                    $('.navbar-toggler').click();
+                }
+            }
+        });
+    }
 }

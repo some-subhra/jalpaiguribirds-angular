@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
+// import 'popper.js';
+// import 'bootstrap';
 
 
 @Component({
@@ -37,6 +39,16 @@ export class AppComponent {
         'link': '../assets/article-docs/Blyth_Rosefinch.pdf',
         'src': '../assets/images/Other-Images/article-slider/rosef.png'
       }, {
+        'caption': 'Sighting of Northern Long-eared Owl in the Teesta grasslands, Jalpaiguri',
+        'users': 'Prateek Choudhury',
+        'link': '../assets/article-docs/long-eared-prateek.pdf',
+        'src': '../assets/images/Other-Images/article-slider/long-eared.png'
+      }, {
+        'caption': 'Photographic record of Smew from Gazaldoba, West Bengal',
+        'users': 'Some Subhra Patra',
+        'link': '../assets/article-docs/some-smew.pdf',
+        'src': '../assets/images/Other-Images/article-slider/smew.png'
+      }, {
         'caption': 'The status of the Black-rumped Magpie in India',
         'users': 'Robert P. Prŷs-Jones & Pamela C. Rasmussen',
         'link': '../assets/article-docs/Black_Rumped_Magpie.pdf',
@@ -44,5 +56,20 @@ export class AppComponent {
       }
     ]
   }
+
+  // ngAfterViewInit() {
+  //   setTimeout(() => {
+  //     let carousels: Array<any> = $('.carousel');
+  //     carousels = $.makeArray(carousels);
+  //     carousels.forEach((carousel) => {
+  //       $(carousel).carousel({
+  //         keyboard: true
+  //       })
+  //     });
+      
+  //   });
+  // }
+
+
 
 }
