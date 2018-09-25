@@ -1,7 +1,7 @@
 <div id="welcome-sighting" class="row">
 
     <div id="sighting" class="col-md-12">
-        <p class="header-texts centuro"> Latest Sightings </p>
+        <p class="header-texts text-center"> Latest Sightings </p>
         <div id="sightingSlider" class="carousel sightingSlider slide bigScreen" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li *ngFor="let slider of sightingSlider; let myIndex = index" data-target="#sightingSlider"
@@ -55,10 +55,10 @@
     </div>
 
     <div id="welcome" class="col-md-12">
-        <div id="welcome-text" style="text-align:center">
-            <p class="header-texts "> Welcome to Jalpaiguri Birds </p>
+        <div id="welcome-text">
+            <p class="header-texts text-center"> Welcome to Jalpaiguri Birds </p>
         </div>
-        <p style="text-align:center; margin:-1px 0;">
+        <p class="text-center">
             <span class="header-texts ">&ldquo; </span>
             <span class="highlight1">They say all good things have a humble beginning. Then honest effort, passion for
                 the task at hand and the good
@@ -107,14 +107,14 @@
         </p>
     </div>
 
-    <div id="separator" class="col-md-12" style="text-align:center">
+    <div id="separator" class="col-md-12 text-center">
         <span class="highlight1">.............................................</span>
     </div>
 </div>
 
 <div id="tour-map" class="row">
     <div id="tour" class="col-md-6" data-position="right" data-intro="<strong><em>Information About Guided Tours & Trips :</em></strong> <br> <br>1. Click on the circular (Grey) buttons to navigate. <br> 2. Click on the pictures to go to the main event page ">
-        <p class="header-texts " style="text-align:center"> Birding Tours </p>
+        <p class="header-texts text-center"> Birding Tours </p>
         <div id="tourSlider" class="carousel tourSlider slide row" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li *ngFor="let slider of tourSlider; let myIndex = index" data-target="#tourSlider"
@@ -136,7 +136,7 @@
     </div>
 
     <div id="map" class="col-md-6" data-position="left" data-intro="<strong><em>Location Of JALPAIGURI Town :</em></strong> <br> <br>1. Scroll-Up &uarr;  to Zoom-In & Scroll-Down &darr;   to Zoon-Out .<br> 2. Click on Larger Map option to see the location in Google Maps">
-        <p class="header-texts " style="text-align:center;"> Area Map </p>
+        <p class="header-texts text-center"> Area Map </p>
         <div class="google-maps">
             <iframe class="custom-shadow" style="border:4px solid #fff" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1831744.708672954!2d88.75313763281248!3d26.273786590563002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4795a4544dc7b%3A0xfd44f1fea54c9c40!2sJalpaiguri%2C+West+Bengal!5e0!3m2!1sen!2sin!4v1431537309464"></iframe>
         </div>
@@ -144,14 +144,14 @@
 </div>
 
 <div id="trip-spot" class="row">
-    <p class="header-texts centuro col-md-12">Latest Articles</p>
+    <p class="header-texts text-center col-md-12">Latest Articles</p>
 
     <div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let items of latestArticles">
         <div class="trip-box">
-            <p class="highlight1 centuro trip-header-text">{{items.location}}</p>
+            <p class="highlight1 text-center trip-header-text">{{items.location}}</p>
             <div class="row">
                 <div id="image" class="col-md-12 col-sm-12">
-                    <p class="centuro trip-image">
+                    <p class="text-center trip-image">
                         <img class="img-thumbnail" src={{items.src}} alt="article image">
                     </p>
                 </div>

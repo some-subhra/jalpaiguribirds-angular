@@ -28,9 +28,6 @@ a:hover {
     font-family: 'Roboto Condensed',Arial, Helvetica,sans-serif;
 }
 
-.centuro {
-    text-align: center;
-}
 
 .custom-shadow {
     -moz-box-shadow: 0 3px 6px #999;
@@ -596,7 +593,7 @@ input[type=search] {
 
 .scrollToTop:hover, .scrollToHelp:hover, .scroll-right:hover, .scroll-left:hover, .read-button:hover {
     background-color: #37511F;
-    color: #fff;
+    color: #fff !important;
 }
 
 #checklist, #team, #gallery, #hot-spot, #gen-info, .spots {
@@ -642,7 +639,7 @@ input[type=search] {
 }
 
 .trip-date {
-    border-right: 1px dashed #DBE2C9;
+    border-right: 2px solid #DBE2C9;
 }
 
 @media (max-width: 767px) {
