@@ -1,0 +1,14 @@
+<div class="row trip-spot-component-wrapper">
+  <div class="btn-group">
+    <button class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      Select Trip-Reports <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li *ngFor="let item of tripRouteArray; let i = index">
+        <a class="trip-spot-link"  [ngClass]="routerUrl == item.routerLink ? 'active' : ''" routerLink="{{item.routerLink}}">{{item.routerText}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,37 @@
+.trip-spot-component-wrapper {
+    .trip-spot-link {
+        padding: 2px 6px;
+        display: inline-block;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .trip-spot-link.active {
+        background-color: #37511f;
+        color: #fff !important;
+    }
+
+    .trip-spot-link.active:hover {
+        background-color: #37511f;
+        color: #fff !important;
+    }
+
+    .trip-spot-link:hover {
+        background-color: #ddd;
+    }
+
+    .btn:focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+    .dropdown-menu.show {
+        -moz-box-shadow: 0 3px 6px #999;
+        -webkit-box-shadow: 0 3px 6px #999;
+        box-shadow: 0 3px 6px #999;
+        min-width: 230px;
+        text-align: justify;
+        padding-right: 5px;
+        padding-left: 4px;
+    }
+}

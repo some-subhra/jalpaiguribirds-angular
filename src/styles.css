@@ -149,7 +149,7 @@ a:hover {
     display: inline-block;
 }
 
-#search-box {
+/* .search-box {
     border: 2px solid #6B6B6B;
     border-radius: 3px;
     width: 150px;
@@ -157,10 +157,15 @@ a:hover {
     background-color: #fff;
     font-weight: 100;
     text-align: center;
-    height: 27px;
+    height: 25px;
     font-size: 13px;
     margin: 2px;
     padding: 2px;
+} */
+
+.search-box {
+    height: 25px !important;
+    font-size: 11px !important;
 }
 
 .searching {
@@ -339,6 +344,7 @@ a:hover {
     background-color: #37511F;
     color: #fff;
     padding: 2px 5px;
+    border-radius: 3px;
 }
 
 #footer {
@@ -597,7 +603,7 @@ input[type=search] {
 }
 
 #checklist, #team, #gallery, #hot-spot, #gen-info, .spots {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .gallery-images {
@@ -605,7 +611,7 @@ input[type=search] {
 }
 
 #hotspot-main p, #BOM p {
-    line-height: 150%;
+    line-height: 180%;
 }
 
 #images > div {

@@ -1,0 +1,22 @@
+.image-caption {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif !important;
+    display: inline-block;
+    background-color: #e5e5e5;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.team {
+    .team-members {
+        .trip-user {
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            img {
+                border: 2px solid #fff;
+                height: 75px;
+            }
+        }
+    }
+}
