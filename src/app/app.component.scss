@@ -10,8 +10,6 @@
     background-color: rgb(221, 221, 221) !important;
 }
 
-
-
 .search-nav {
     .search-box, .btn {
         padding: 2px 5px;
@@ -54,6 +52,7 @@
 
     .carousel-indicators {
         bottom: -35px;
+
         // width: max-content;
         // left: -50%;
         li {
@@ -65,24 +64,26 @@
 
         li.active {
             background-color: rgb(55, 81, 31);
-       
         }
     }
 
     .carousel-image-caption {
         position: relative;
+
+        .img-thumbnail {
+            border: 1px solid #caccc6;
+        }
     }
 
     .carousel-caption {
-        background-color: #00000045;
-        height: 255px;
-        width: 188px;
+        background-color: #0000007a;
+        height: 256px;
+        width: 189px;
         position: absolute;
         top: 6px;
         left: 6px;
         padding: 40px 10px 10px;
         margin: 0px;
-
         h5 {
             font-family: 'Raleway', sans-serif !important;
         }

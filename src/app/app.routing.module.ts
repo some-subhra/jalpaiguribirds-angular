@@ -14,25 +14,25 @@ import { RoyalManasComponent } from './components/all-trip-reports/royal-manas/r
 
 const routes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index', component: HomeComponent },
-    { path: 'team', component: TeamComponent },
-    { path: 'trip-reports', component: TripReportComponent },
+    { path: 'index', component: HomeComponent, data: { title: 'Home' } },
+    { path: 'team', component: TeamComponent, data: { title: 'Team' } },
+    { path: 'trip-reports', component: TripReportComponent, data: { title: 'Trip-Reports' } },
     {
         path: 'all-trip-reports',
         component: AllTripReportsComponent,
         children: [
             { path: '', redirectTo: 'royal-manas', pathMatch: 'full' },
-            { path: 'royal-manas', component: RoyalManasComponent },
+            { path: 'royal-manas', component: RoyalManasComponent, data: { title: 'Royal Manas National Park' } },
         ]
     },
-    { path: 'checklist', component: ChecklistComponent },
-    { path: 'gallery', component: GalleryComponent },
-    { path: 'hot-spots', component: HotSpotsComponent },
+    { path: 'checklist', component: ChecklistComponent, data: { title: 'Checklist' } },
+    { path: 'gallery', component: GalleryComponent, data: { title: 'Gallery' } },
+    { path: 'hot-spots', component: HotSpotsComponent, data: { title: 'Birding Spots' } },
     { path: '**', redirectTo: 'index' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { useHash: true })],
+    imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
 

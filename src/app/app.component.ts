@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 // import * as $ from 'jquery';
 // import 'popper.js';
 // import 'bootstrap';
@@ -12,8 +14,28 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Jalpaiguri Birds';
   public articleSlider: Array<any> = [];
-  constructor() {
+  constructor(titleService: Title, router: Router, activatedRoute: ActivatedRoute) {
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        var title = this.getTitle(router.routerState, router.routerState.root).join('-');
+        console.log('title', title);
+        titleService.setTitle(title+' | Jalpaiguri Birds');
+      }
+    });
+  }
 
+
+
+  getTitle(state, parent) {
+    var data = [];
+    if (parent && parent.snapshot.data && parent.snapshot.data.title) {
+      data.push(parent.snapshot.data.title);
+    }
+
+    if (state && parent) {
+      data.push(... this.getTitle(state, state.firstChild(parent)));
+    }
+    return data;
   }
 
   ngOnInit() {
@@ -66,10 +88,11 @@ export class AppComponent {
   //         keyboard: true
   //       })
   //     });
-      
+
   //   });
   // }
 
 
 
 }
+

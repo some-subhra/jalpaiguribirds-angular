@@ -357,6 +357,7 @@ a:hover {
 
 .footer-blocks {
     margin: 5px 0;
+    margin-bottom: 15px;
 }
 
 #site-menu {
@@ -624,15 +625,13 @@ input[type=search] {
     }
 
     #literature {
-        margin-bottom: 20px;
-        text-align: left;
+        margin-bottom: 55px;
+        text-align: left !important;
     }
 
     .close-image {
         margin-bottom: 5px;
     }
-
-    
 
     #images > div {
         margin-bottom: 25px;
@@ -798,3 +797,25 @@ ul#marker_list li.loc.active, ul#marker_list li.reset {
       width: 1080px;
     }
   } */
+
+  .image-caption {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif !important;
+    display: inline-block;
+    background-color: #e5e5e5;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.rarity {
+    position: relative;
+}
+/* .rarity a::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-color: red;
+    top:0;
+    left:0;
+} */
